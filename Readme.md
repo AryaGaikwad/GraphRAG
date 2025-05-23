@@ -274,41 +274,7 @@ python quick_start.py build
 # Run interactive queries
 python quick_start.py query
 
-# Validate the built graph
-python quick_start.py validate
-```
 
-### **Method 2: Using build_graph.py**
-```bash
-# Build graph directly
-python build_graph.py shiny_docs/content shiny_docs/doc_structure.json
-
-# Then run queries
-python enhanced_query_system.py
-```
-
-### **Method 3: Using enhanced_query_system.py**
-```bash
-# Build via enhanced query system
-python enhanced_query_system.py build shiny_docs/content shiny_docs/doc_structure.json
-
-# Run queries
-python enhanced_query_system.py
-```
-
-### **Method 4: Programmatic Usage**
-```python
-from llm_graph_builder import build_and_optimize_knowledge_graph
-from enhanced_query_system import EnhancedShinyQuerySystem
-
-# Build the graph
-success = build_and_optimize_knowledge_graph("shiny_docs/content", "shiny_docs/doc_structure.json")
-
-# Use the query system
-if success:
-    system = EnhancedShinyQuerySystem()
-    result = system.query_enhanced_shiny_docs("How do I create interactive inputs?")
-    print(result['final_answer'])
 ```
 
 ## 📊 **Understanding the Process**
