@@ -11,6 +11,7 @@ GraphRAG: `User Query → Graph Traversal + Vector Search → Related Entities +
 This system transforms your documentation into an intelligent knowledge graph that understands relationships, concepts, and workflows - then uses that understanding to provide contextual, comprehensive answers.
 
 Original Microsoft Blog: https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/
+
 What is Cypher? : https://neo4j.com/docs/getting-started/cypher/
 
 ## 🏗️ **System Architecture**
